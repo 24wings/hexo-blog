@@ -307,6 +307,9 @@ body {
 .widget dt {
   font-weight: bold;
 }
+iframe {
+  height: 400px;
+}
 #header {
   height: 300px;
   position: relative;

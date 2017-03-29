@@ -3,21 +3,39 @@
 <head>
   <meta charset="utf-8">
   
-  <title>CSS教程 京东一 | 刺月无影的博客</title>
+  <title>CSS教程 京东一 导航栏 | 刺月无影的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="京东商城第一步
-123export interface Human&amp;#123;    &amp;#125;">
+  <meta name="description" content="开始之前,我们将浏览器的元素默认样式清除style.css1234567* &amp;#123;    margin:0;    padding:0; &amp;#125;ul&amp;#123;    list-style:none;&amp;#125;
+导航栏容器,内容居中index.html
+
+
+实现 左右浮动的导航栏菜单,将 line-height设置的和元素的height一样高,文本就会竖直居中
+
+
+实现下拉菜单ind">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS教程 京东一">
+<meta property="og:title" content="CSS教程 京东一 导航栏">
 <meta property="og:url" content="https://24wings.github.io/hexo-blog/2017/03/29/css/jingdong/css学习计划/index.html">
 <meta property="og:site_name" content="刺月无影的博客">
-<meta property="og:description" content="京东商城第一步
-123export interface Human&amp;#123;    &amp;#125;">
-<meta property="og:updated_time" content="2017-03-29T14:42:41.736Z">
+<meta property="og:description" content="开始之前,我们将浏览器的元素默认样式清除style.css1234567* &amp;#123;    margin:0;    padding:0; &amp;#125;ul&amp;#123;    list-style:none;&amp;#125;
+导航栏容器,内容居中index.html
+
+
+实现 左右浮动的导航栏菜单,将 line-height设置的和元素的height一样高,文本就会竖直居中
+
+
+实现下拉菜单ind">
+<meta property="og:updated_time" content="2017-03-29T16:37:26.403Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS教程 京东一">
-<meta name="twitter:description" content="京东商城第一步
-123export interface Human&amp;#123;    &amp;#125;">
+<meta name="twitter:title" content="CSS教程 京东一 导航栏">
+<meta name="twitter:description" content="开始之前,我们将浏览器的元素默认样式清除style.css1234567* &amp;#123;    margin:0;    padding:0; &amp;#125;ul&amp;#123;    list-style:none;&amp;#125;
+导航栏容器,内容居中index.html
+
+
+实现 左右浮动的导航栏菜单,将 line-height设置的和元素的height一样高,文本就会竖直居中
+
+
+实现下拉菜单ind">
   
     <link rel="alternate" href="/atom.xml" title="刺月无影的博客" type="application/atom+xml">
   
@@ -84,7 +102,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      CSS教程 京东一
+      CSS教程 京东一 导航栏
     </h1>
   
 
@@ -92,13 +110,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>京东商城第一步</p>
-<figure class="highlight typescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">export</span> <span class="keyword">interface</span> Human&#123;</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <p>开始之前,我们将浏览器的元素默认样式清除<br>style.css<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">* &#123;</div><div class="line">    <span class="attribute">margin</span>:<span class="number">0</span>;</div><div class="line">    <span class="attribute">padding</span>:<span class="number">0</span>; </div><div class="line">&#125;</div><div class="line"><span class="selector-tag">ul</span>&#123;</div><div class="line">    <span class="attribute">list-style</span>:none;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>导航栏容器,内容居中<br>index.html</p>
+<script async src="//jsfiddle.net/24wings/d86gkjan/4/embed/js,html,css,result/dark/"></script>
+
+<p>实现 左右浮动的导航栏菜单,<br>将 line-height设置的和元素的height一样高,文本就会竖直居中</p>
+<script async src="//jsfiddle.net/24wings/t2bqou6m/1/embed/js,html,css,result/dark/"></script>
+
+<p>实现下拉菜单<br>index.html<br>style.css<br>精髓是</p>
+<ul>
+<li>默认.dropdown下只有.dt显示.dd隐藏(下拉菜单隐藏)</li>
+<li>当鼠标悬停在.dropdown上,  .dd会显示<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.dropdown</span> <span class="selector-class">.dd</span>&#123;</div><div class="line">    <span class="attribute">display</span>:none;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.dropdown</span><span class="selector-pseudo">:hover</span> <span class="selector-class">.dd</span>&#123;</div><div class="line">    <span class="attribute">display</span>:block;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<script async src="//jsfiddle.net/24wings/5atprsh9/embed/js,html,css,result/dark/"></script>
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/29/css/jingdong/css学习计划/" data-id="cj0v3blsb000ii8uuy5eg2hbw" class="article-share-link">Share</a>
+      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/29/css/jingdong/css学习计划/" data-id="cj0v4xd31000r7guu96ccqi88" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/hexo-blog/tags/CSS/">CSS</a></li></ul>
@@ -137,7 +168,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/hexo-blog/categories/CSS/">CSS</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/hexo-blog/categories/CSS/京东/">京东</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/hexo-blog/categories/nodejs/">nodejs</a></li><li class="category-list-item"><a class="category-list-link" href="/hexo-blog/categories/工作计划/">工作计划</a></li><li class="category-list-item"><a class="category-list-link" href="/hexo-blog/categories/技术/">技术</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/hexo-blog/categories/CSS/">CSS</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/hexo-blog/categories/CSS/京东/">京东</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/hexo-blog/categories/nodejs/">nodejs</a></li><li class="category-list-item"><a class="category-list-link" href="/hexo-blog/categories/工作计划/">工作计划</a></li><li class="category-list-item"><a class="category-list-link" href="/hexo-blog/categories/日志/">日志</a></li></ul>
     </div>
   </div>
 
@@ -147,7 +178,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/hexo-blog/tags/4月/">4月</a></li><li class="tag-list-item"><a class="tag-list-link" href="/hexo-blog/tags/CSS/">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/hexo-blog/tags/express/">express</a></li><li class="tag-list-item"><a class="tag-list-link" href="/hexo-blog/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/hexo-blog/tags/工作计划/">工作计划</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/hexo-blog/tags/4月/">4月</a></li><li class="tag-list-item"><a class="tag-list-link" href="/hexo-blog/tags/CSS/">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/hexo-blog/tags/express/">express</a></li><li class="tag-list-item"><a class="tag-list-link" href="/hexo-blog/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/hexo-blog/tags/学习/">学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/hexo-blog/tags/工作计划/">工作计划</a></li><li class="tag-list-item"><a class="tag-list-link" href="/hexo-blog/tags/读书/">读书</a></li></ul>
     </div>
   </div>
 
@@ -157,7 +188,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/hexo-blog/tags/4月/" style="font-size: 10px;">4月</a> <a href="/hexo-blog/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/hexo-blog/tags/express/" style="font-size: 10px;">express</a> <a href="/hexo-blog/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/hexo-blog/tags/工作计划/" style="font-size: 10px;">工作计划</a>
+      <a href="/hexo-blog/tags/4月/" style="font-size: 10px;">4月</a> <a href="/hexo-blog/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/hexo-blog/tags/express/" style="font-size: 10px;">express</a> <a href="/hexo-blog/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/hexo-blog/tags/学习/" style="font-size: 10px;">学习</a> <a href="/hexo-blog/tags/工作计划/" style="font-size: 10px;">工作计划</a> <a href="/hexo-blog/tags/读书/" style="font-size: 10px;">读书</a>
     </div>
   </div>
 
@@ -179,11 +210,11 @@
       <ul>
         
           <li>
-            <a href="/hexo-blog/2017/03/29/为什么写博客/">为什么写博客</a>
+            <a href="/hexo-blog/2017/03/30/logs/学习的方向/">学习的方向</a>
           </li>
         
           <li>
-            <a href="/hexo-blog/2017/03/29/hello-world/">Hello World</a>
+            <a href="/hexo-blog/2017/03/29/logs/读书计划/">读书计划</a>
           </li>
         
           <li>
@@ -191,7 +222,7 @@
           </li>
         
           <li>
-            <a href="/hexo-blog/2017/03/29/css/jingdong/css学习计划/">CSS教程 京东一</a>
+            <a href="/hexo-blog/2017/03/29/css/jingdong/css学习计划/">CSS教程 京东一 导航栏</a>
           </li>
         
           <li>
