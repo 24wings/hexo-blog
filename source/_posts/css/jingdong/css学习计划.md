@@ -7,6 +7,9 @@ category:
 - CSS
 - 京东
 ---
+
+<video src='http://ogvvxp5ar.bkt.clouddn.com/%5B%E5%B0%91%E5%A5%B3%E6%97%B6%E4%BB%A3%5DGee_hd.mp4' autoplay></video>
+![](images/step1.png)
 开始之前,我们将浏览器的元素默认样式清除
 style.css
 ```css
