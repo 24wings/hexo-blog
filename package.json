@@ -15,7 +15,10 @@
     "hexo-render-pug": "^1.2.0",
     "hexo-renderer-ejs": "^0.2.0",
     "hexo-renderer-marked": "^0.2.10",
+    "hexo-renderer-pug": "^0.0.5",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "install": "^0.8.8",
+    "uninstall": "^0.0.0-reserved"
   }
 }
