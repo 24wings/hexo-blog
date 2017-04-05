@@ -3,41 +3,29 @@
 <head>
   <meta charset="utf-8">
   
-  <title>CSS教程 京东一 导航栏 | 刺月无影的博客</title>
+  <title>黑客XSS漏洞挖掘过程 | 刺月无影的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="开始之前,我们将浏览器的元素默认样式清除style.css1234567* &amp;#123;    margin:0;    padding:0; &amp;#125;ul&amp;#123;    list-style:none;&amp;#125;
-导航栏容器,内容居中index.html
-
-
-实现 左右浮动的导航栏菜单,将 line-height设置的和元素的height一样高,文本就会竖直居中
-
-
-实现下拉菜单ind">
+  <meta name="description" content="原文黑客漏洞挖掘
+张祖优/fooying(http://www.leiphone.com/news/201703/ivnUzjjWk20kBsrM.html)知乎上回答了128个关于黑客,安全的问题,研发过博彩、色情、钓鱼网站检测引擎
+Fuzzing 模糊测试渗透测试是挖掘漏洞的最常用的手段之一，不只是XSS，Fuzzing可以用于大部分类型的漏洞挖掘。通俗可以把这种方式理解为不断尝试的过程。
+由">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS教程 京东一 导航栏">
-<meta property="og:url" content="https://24wings.github.io/hexo-blog/2017/03/29/css/jingdong/css学习计划/index.html">
+<meta property="og:title" content="黑客XSS漏洞挖掘过程">
+<meta property="og:url" content="https://24wings.github.io/hexo-blog/2017/03/31/黑客XSS漏洞挖掘过程/index.html">
 <meta property="og:site_name" content="刺月无影的博客">
-<meta property="og:description" content="开始之前,我们将浏览器的元素默认样式清除style.css1234567* &amp;#123;    margin:0;    padding:0; &amp;#125;ul&amp;#123;    list-style:none;&amp;#125;
-导航栏容器,内容居中index.html
-
-
-实现 左右浮动的导航栏菜单,将 line-height设置的和元素的height一样高,文本就会竖直居中
-
-
-实现下拉菜单ind">
-<meta property="og:image" content="https://24wings.github.io/hexo-blog/images/step1.png">
-<meta property="og:updated_time" content="2017-03-30T16:07:37.370Z">
+<meta property="og:description" content="原文黑客漏洞挖掘
+张祖优/fooying(http://www.leiphone.com/news/201703/ivnUzjjWk20kBsrM.html)知乎上回答了128个关于黑客,安全的问题,研发过博彩、色情、钓鱼网站检测引擎
+Fuzzing 模糊测试渗透测试是挖掘漏洞的最常用的手段之一，不只是XSS，Fuzzing可以用于大部分类型的漏洞挖掘。通俗可以把这种方式理解为不断尝试的过程。
+由">
+<meta property="og:image" content="https://blog-10039692.file.myqcloud.com/1490259301866_8855_1490259302672.jpg">
+<meta property="og:updated_time" content="2017-03-31T14:39:51.162Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS教程 京东一 导航栏">
-<meta name="twitter:description" content="开始之前,我们将浏览器的元素默认样式清除style.css1234567* &amp;#123;    margin:0;    padding:0; &amp;#125;ul&amp;#123;    list-style:none;&amp;#125;
-导航栏容器,内容居中index.html
-
-
-实现 左右浮动的导航栏菜单,将 line-height设置的和元素的height一样高,文本就会竖直居中
-
-
-实现下拉菜单ind">
-<meta name="twitter:image" content="https://24wings.github.io/hexo-blog/images/step1.png">
+<meta name="twitter:title" content="黑客XSS漏洞挖掘过程">
+<meta name="twitter:description" content="原文黑客漏洞挖掘
+张祖优/fooying(http://www.leiphone.com/news/201703/ivnUzjjWk20kBsrM.html)知乎上回答了128个关于黑客,安全的问题,研发过博彩、色情、钓鱼网站检测引擎
+Fuzzing 模糊测试渗透测试是挖掘漏洞的最常用的手段之一，不只是XSS，Fuzzing可以用于大部分类型的漏洞挖掘。通俗可以把这种方式理解为不断尝试的过程。
+由">
+<meta name="twitter:image" content="https://blog-10039692.file.myqcloud.com/1490259301866_8855_1490259302672.jpg">
   
     <link rel="alternate" href="/atom.xml" title="刺月无影的博客" type="application/atom+xml">
   
@@ -90,16 +78,12 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-css/jingdong/css学习计划" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-黑客XSS漏洞挖掘过程" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/hexo-blog/2017/03/29/css/jingdong/css学习计划/" class="article-date">
-  <time datetime="2017-03-29T12:44:16.000Z" itemprop="datePublished">2017-03-29</time>
+    <a href="/hexo-blog/2017/03/31/黑客XSS漏洞挖掘过程/" class="article-date">
+  <time datetime="2017-03-31T08:08:06.000Z" itemprop="datePublished">2017-03-31</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/hexo-blog/categories/CSS/">CSS</a>►<a class="article-category-link" href="/hexo-blog/categories/CSS/京东/">京东</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -108,7 +92,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      CSS教程 京东一 导航栏
+      黑客XSS漏洞挖掘过程
     </h1>
   
 
@@ -116,49 +100,57 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/images/step1.png" alt=""><br>开始之前,我们将浏览器的元素默认样式清除<br>style.css<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">* &#123;</div><div class="line">    <span class="attribute">margin</span>:<span class="number">0</span>;</div><div class="line">    <span class="attribute">padding</span>:<span class="number">0</span>; </div><div class="line">&#125;</div><div class="line"><span class="selector-tag">ul</span>&#123;</div><div class="line">    <span class="attribute">list-style</span>:none;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>导航栏容器,内容居中<br>index.html</p>
-<script async src="//jsfiddle.net/24wings/d86gkjan/4/embed/js,html,css,result/dark/"></script>
-
-<p>实现 左右浮动的导航栏菜单,<br>将 line-height设置的和元素的height一样高,文本就会竖直居中</p>
-<script async src="//jsfiddle.net/24wings/t2bqou6m/1/embed/js,html,css,result/dark/"></script>
-
-<p>实现下拉菜单<br>index.html<br>style.css<br>精髓是</p>
+        <p>原文<a href="https://www.qcloud.com/community/article/172258001490259493?fromSource=gwzcw.59779.59779.59779" target="_blank" rel="external">黑客漏洞挖掘</a></p>
+<h3 id="张祖优-fooying-http-www-leiphone-com-news-201703-ivnUzjjWk20kBsrM-html"><a href="#张祖优-fooying-http-www-leiphone-com-news-201703-ivnUzjjWk20kBsrM-html" class="headerlink" title="张祖优/fooying(http://www.leiphone.com/news/201703/ivnUzjjWk20kBsrM.html)"></a>张祖优/fooying(<a href="http://www.leiphone.com/news/201703/ivnUzjjWk20kBsrM.html" target="_blank" rel="external">http://www.leiphone.com/news/201703/ivnUzjjWk20kBsrM.html</a>)</h3><p><a href="http://www.leiphone.com/news/201701/Pmsr9n3y0AI3VAxR.html" target="_blank" rel="external">知乎上回答了128个关于黑客,安全的问题</a>,研发过博彩、色情、钓鱼网站检测引擎</p>
+<h3 id="Fuzzing-模糊测试"><a href="#Fuzzing-模糊测试" class="headerlink" title="Fuzzing 模糊测试"></a>Fuzzing 模糊测试</h3><p>渗透测试是挖掘漏洞的最常用的手段之一，不只是XSS，Fuzzing可以用于大部分类型的漏洞挖掘。通俗可以把这种方式理解为不断尝试的过程。</p>
+<p><img src="https://blog-10039692.file.myqcloud.com/1490259301866_8855_1490259302672.jpg" alt=""><br>由http请求<br>插件初始化<br>解析插件配置,加载检测请求,解析用户请求,初始化进度,数据存储等<br>检测向量,输入入口<br>检测入口模块<br>POST,GET,COOKIE =&gt; XSS检测<br>潜在注入点检测<br>    爬虫API,与通用方法</p>
+<pre><code>    * 表单检测
+    * ANTI,
+    * CSRF
+    * WebKit解析接口
+    * 爬虫Reque
+若存在潜在注入点
+    循环生成XSS PayLoad
+        在爬虫API与通用方法,PalyLoad攻击验证
+若不存在
+    回收结果
+</code></pre><p>KCon</p>
+<p>抓bug的地方</p>
 <ul>
-<li>默认.dropdown下只有.dt显示.dd隐藏(下拉菜单隐藏)</li>
-<li>当鼠标悬停在.dropdown上,  .dd会显示<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.dropdown</span> <span class="selector-class">.dd</span>&#123;</div><div class="line">    <span class="attribute">display</span>:none;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.dropdown</span><span class="selector-pseudo">:hover</span> <span class="selector-class">.dd</span>&#123;</div><div class="line">    <span class="attribute">display</span>:block;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li>知乎</li>
+<li>简述</li>
+<li>YouPorn   almaco 查找bug事件</li>
+<li><p>Pornhub</p>
+</li>
+<li><p><a href="http://www.leiphone.com/news/201702/f7H0i9y7H9OOjEwm.html?ulu-rcmd=0_5021df_art_1_40ed8480-8797-4598-ae25-df54292ce35e" target="_blank" rel="external">黑客进军的地方</a></p>
 </li>
 </ul>
-<script async src="//jsfiddle.net/24wings/5atprsh9/embed/js,html,css,result/dark/"></script>
-
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/29/css/jingdong/css学习计划/" data-id="cj14jbk7b000wukuuo0fqcnh0" class="article-share-link">Share</a>
+      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/31/黑客XSS漏洞挖掘过程/" data-id="cj14jbk590000ukuu5tso47fq" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/hexo-blog/tags/CSS/">CSS</a></li></ul>
-
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/hexo-blog/2017/03/29/workplan/M4/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/hexo-blog/2017/03/31/黑客/web前端黑客技术揭秘/bug网站/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          4月工作计划
+          bug网站
         
       </div>
     </a>
   
   
-    <a href="/hexo-blog/2017/03/29/nodejs/express心得/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/hexo-blog/2017/03/31/黑客/web前端黑客技术揭秘/4-csrf/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">express心得</div>
+      <div class="article-nav-title">4.csrf</div>
     </a>
   
 </nav>
